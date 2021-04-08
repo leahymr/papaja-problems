@@ -1,0 +1,24 @@
+#################
+# R Markdown panel output when knitting Default.Rmd
+#################
+
+==> rmarkdown::render('/Users/leahym/Documents/Projects/DU/APA style guides/apa7 rmarkdown/papaja-sample/Default.Rmd',  encoding = 'UTF-8');
+Tracing function "loadNamespace" in package "base (not-exported)"
+Dotted pair list of 14
+ $ : language rmarkdown::render("/Users/leahym/Documents/Projects/DU/APA style guides/apa7 rmarkdown/papaja-sample/Default.Rmd"| __truncated__
+ $ : language create_output_format(output_format$name, output_format$options)
+ $ : language create_output_format_function(name)
+ $ : language eval(parse(text = name))
+ $ : language eval(parse(text = name))
+ $ : language papaja::apa6_pdf
+ $ : language getExportedValue(pkg, name)
+ $ : language asNamespace(ns)
+ $ : language getNamespace(ns)
+ $ : language loadNamespace(name)
+ $ : language .doTrace({     if (package == "papaja")  ...
+ $ : language eval.parent(exprObj)
+ $ : language eval(expr, p)
+ $ : language eval(expr, p)
+Error in loadNamespace(name) : there is no package called ‘papaja’
+Calls: <Anonymous> ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
+Execution halted

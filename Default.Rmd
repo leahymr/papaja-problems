@@ -1,0 +1,29 @@
+---
+title             : "This is my title"
+shorttitle        : "Title"
+
+# documentclass     : "apa6"
+# classoption       : man / jou / stu / doc
+classoption       : "stu"
+# output            : papaja::apa6_pdf
+csl               : "apa7.csl"
+documentclass     : "apa7"
+output            : papaja::apa6_pdf
+course            : "DATA 610 - Business Analytics"
+professor         : "Dr. Stephen Snyder"
+duedate           : "April 4, 2021"
+---
+
+```{r echo=TRUE}
+library(papaja)
+options(error = function() {
+  sink()
+  recover()
+})
+.libPaths()
+.Library
+```
+
+# Methods
+
+We report

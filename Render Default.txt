@@ -1,0 +1,99 @@
+##########################
+#  Console listing of a successful render() of the Default.Rmd file
+##########################
+
+
+R version 4.0.4 (2021-02-15) -- "Lost Library Book"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Tracing function "loadNamespace" in package "base (not-exported)"
+> .libPaths()
+[1] "/Users/leahym/Library/R/4.0/library"
+[2] "/usr/local/lib/R/site-library"
+[3] "/Library/Frameworks/R.framework/Versions/4.0/Resources/library"
+> .Library
+[1] "/Library/Frameworks/R.framework/Resources/library"
+> sessionInfo()
+R version 4.0.4 (2021-02-15)
+Platform: x86_64-apple-darwin17.0 (64-bit)
+Running under: macOS Mojave 10.14.6
+
+Matrix products: default
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+loaded via a namespace (and not attached):
+ [1] compiler_4.0.4    htmltools_0.5.1.1 tools_4.0.4       yaml_2.2.1
+ [5] rmarkdown_2.7     knitr_1.31        xfun_0.22         digest_0.6.27
+ [9] rlang_0.4.10      evaluate_0.14
+> options(error = function() {
++     sink()
++     recover()
++ })
+>
+> library(rmarkdown)
+> library(papaja)
+Loading required package: tinylabels
+Dotted pair list of 10
+ $ : language library(papaja)
+ $ : language tryCatch({     attr(package, "LibPath") <- which.lib.loc ...
+ $ : language tryCatchList(expr, classes, parentenv, handlers)
+ $ : language tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ $ : language doTryCatch(return(expr), name, parentenv, handler)
+ $ : language loadNamespace(package, lib.loc)
+ $ : language .doTrace({     if (package == "papaja")  ...
+ $ : language eval.parent(exprObj)
+ $ : language eval(expr, p)
+ $ : language eval(expr, p)
+> render("Default.Rmd")
+
+
+processing file: Default.Rmd
+  |......................                                             |  33%
+  ordinary text without R code
+
+  |.............................................                      |  67%
+label: unnamed-chunk-1 (with options)
+List of 1
+ $ echo: logi TRUE
+
+  |...................................................................| 100%
+  ordinary text without R code
+
+
+output file: Default.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS Default.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash+raw_attribute --output Default.tex --lua-filter /Users/leahym/Library/R/4.0/library/bookdown/rmarkdown/lua/custom-environment.lua --lua-filter /Users/leahym/Library/R/4.0/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Users/leahym/Library/R/4.0/library/rmarkdown/rmarkdown/lua/latex-div.lua --self-contained --highlight-style tango --pdf-engine pdflatex --include-in-header /Users/leahym/Library/R/4.0/library/papaja/rmarkdown/templates/apa6/resources/apa6_header_includes.tex --variable graphics --wrap preserve --csl apa7.csl --citeproc --lua-filter /Users/leahym/Library/R/4.0/library/rmdfiltr/replace_ampersands.lua --lua-filter /Users/leahym/Library/R/4.0/library/rmdfiltr/wordcount.lua --lua-filter /Users/leahym/Library/R/4.0/library/papaja/lua/parse_metadata.lua --variable 'classoption:stu' --variable 'lang:en-EN' --variable 'subparagraph:yes' --variable 'block-headings:no' --include-in-header /var/folders/xm/84wn1p41287d2k7x0lsz_t0c0000gp/T//Rtmpw3Eww5/includes_149147e54e375.tex
+24 words in text body
+0 words in reference section
+
+Output created: Default.pdf
+Warning messages:
+1: In has_crop_tools() :
+Tool(s) not installed or not in PATH: pdfcrop, ghostcript
+-> As a result, figure cropping will be disabled.
+2: In has_crop_tools() :
+Tool(s) not installed or not in PATH: pdfcrop, ghostcript
+-> As a result, figure cropping will be disabled.
+>

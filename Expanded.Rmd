@@ -1,0 +1,118 @@
+---
+title             : "This is my title"
+shorttitle        : "Title"
+
+author: 
+  - name          : "First Author"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Postal address"
+    email         : "my@email.com"
+    role:         # Contributorship roles (e.g., CRediT, https://casrai.org/credit/)
+      - Conceptualization
+      - Writing - Original Draft Preparation
+      - Writing - Review & Editing
+  - name          : "Ernst-August Doelle"
+    affiliation   : "1,2"
+    role:
+      - Writing - Review & Editing
+
+affiliation:
+  - id            : "1"
+    institution   : "Wilhelm-Wundt-University"
+  - id            : "2"
+    institution   : "Konstanz Business School"
+
+authornote: |
+  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+  Enter author note here.
+
+abstract: |
+  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
+  
+  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
+  
+  One sentence clearly stating the **general problem** being addressed by  this particular study.
+  
+  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
+  
+  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
+  
+  One or two sentences to put the results into a more **general context**.
+  
+  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : no
+mask              : no
+draft             : no
+csquotes          : yes # added MRL
+
+# documentclass     : "apa6"
+#classoption       : man / jou / stu / doc
+classoption       : "stu"
+# output            : papaja::apa6_pdf
+csl               : "apa7.csl"
+documentclass     : "apa7"
+output            : papaja::apa6_pdf
+course : "DATA 610 - Business Analytics"
+professor : "Dr. Stephen Snyder"
+duedate : "April 4, 2021"
+---
+
+# READ ME
+
+-   R command to knit document: `library(rmarkdown); render("document.Rmd")`
+-   Link to papaja: <https://github.com/crsh/papaja>
+-   Link to apa7.csl: <https://github.com/crsh/papaja/issues/342>
+-   Link to instructions to apa7 in LaTex: <https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/apa7/apa7.pdf>
+-   Instructions to resolve loadNamespace error: <https://www.njtierney.com/post/2020/05/29/there-is-no-pkg/>
+-   Link to papaja manual: <http://frederikaust.com/papaja_man/>
+-   Link to tinytex: <https://yihui.org/tinytex/>
+-   How to update tinytex: `sudo R -e "tinytex::reinstall_tinytex()"`
+-   How to search for missing tinytex files: `tlmgr search --global --file "/times.sty"`
+-   How to install specific tinytex files: `sudo tlmgr install psnfss` (because times.sty is in psnfss)
+-   author of apa7(?): [mailto:daniel.weiss.led\@gmail.com](mailto:daniel.weiss.led@gmail.com){.uri}
+
+# Methods
+
+We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+
+We used `r cite_r("r-references.bib")` for all our analyses.
+
+# Results
+
+# Discussion
+
+\newpage
+
+# References
+
+```{=tex}
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+```
+::: {#refs custom-style="Bibliography"}
+:::
+
+\endgroup

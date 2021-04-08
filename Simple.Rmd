@@ -1,0 +1,25 @@
+---
+title: "Simple"
+author: "Michael Leahy"
+date: "4/8/2021"
+output: pdf_document
+---
+
+```{r echo=TRUE}
+.libPaths()
+.Library
+sessionInfo()
+options(error = function() {
+  sink()
+  recover()
+})
+
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Trivial R Markdown Document
+
+This is my document

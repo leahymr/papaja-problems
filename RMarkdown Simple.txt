@@ -1,0 +1,38 @@
+####################
+# R Markdown panel output when kitting Simple.Rmd
+####################
+
+==> rmarkdown::render('/Users/leahym/Documents/Projects/DU/APA style guides/apa7 rmarkdown/papaja-sample/Simple.Rmd',  encoding = 'UTF-8');
+Tracing function "loadNamespace" in package "base (not-exported)"
+
+
+processing file: Simple.Rmd
+  |..............                                                        |  20%
+  ordinary text without R code
+
+  |............................                                          |  40%
+label: unnamed-chunk-1 (with options)
+List of 1
+ $ echo: logi TRUE
+
+  |..........................................                            |  60%
+  ordinary text without R code
+
+  |........................................................              |  80%
+label: setup (with options)
+List of 1
+ $ include: logi FALSE
+
+  |......................................................................| 100%
+  ordinary text without R code
+
+
+output file: Simple.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS Simple.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output Simple.tex --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/latex-div.lua --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --variable 'geometry:margin=1in'
+
+Output created: Simple.pdf
+Warning message:
+In has_crop_tools() :
+Tool(s) not installed or not in PATH: pdfcrop, ghostcript
+-> As a result, figure cropping will be disabled.
